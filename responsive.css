@@ -1,0 +1,535 @@
+@media(max-width: 760px){
+	#menu{
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 70px;
+		right: 0;
+		background: #292929;
+		height: 0px;
+		text-align: center;
+		transition: 0.5s;
+		z-index: 1000;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+	#nav.active #menu{
+		height: calc(100vh - 80px);
+		visibility: visible;
+		overflow-y: auto;
+	} 
+	#menu a{
+		padding: 1rem 0;
+		margin: 0 1rem;
+		border-bottom: 1px solid #fff;
+	}
+	#btn-mobile{
+		display: flex;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	#hamburger{
+		width: 20px;
+		border-top: 2px solid #fff;
+	}
+	#hamburger::after, #hamburger::before{
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #fff;
+		margin-top: 5px;
+		transition: .5s;
+		position: relative;
+	}
+	#nav.active #hamburger{
+		border-top-color: transparent;
+	}
+	#nav.active #hamburger::before{
+		transform: rotate(135deg);
+	}
+	#nav.active #hamburger::after{
+		transform: rotate(-135deg);
+		top: -7px;
+	}
+	/*RESTO*/
+	.slide-text{
+		padding: 5px 0;
+	}
+	.slide-text .title{
+		font-size: 18px;
+	}
+	.slide-text .subtitle{
+		font-size: 60px;
+	}
+	.btn{
+		font-size: 1.5em;
+	}
+	.btn:hover{
+		transform: scale(1.2);
+	}
+	#quem-somos h1{
+		font-size: 60px;
+	}
+	#quem-somos img{
+		width: 500px; height: 500px;
+		margin-bottom: 30px;
+	}
+	#quem-somos p{
+		width: 100%;
+		font-size: 16px;
+	}
+	#quem-somos .biograph{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	#servicos h1{
+		font-size: 60px;
+	}
+	.preco span{
+		font-size: 20px;
+	}
+	.modal-content{
+		width: 500px; height: 500px;
+	}
+	.modal-content .modal-img{
+		width: 410px; height: 410px;
+	}
+	#galeria h1{
+		font-size: 60px;
+	}
+	.flexbox > div{
+		max-width: 300px;
+	}
+	.flexbox img{
+		width: 300px; height: 300px;
+	}
+	#clientes h1{
+		font-size: 60px;
+	}
+	.cards{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.card{
+		width: 400px;
+		height: 350px;
+	}
+	#contact h1{
+		font-size: 60px;
+	}
+	.p1, .p2{
+		font-size: 16px;
+	}
+	input::placeholder{
+		font-size: 16px;
+	}
+	#email{
+		font-size: 16px;
+	}
+	textarea{
+		font-size: 16px;
+	}
+	#botao{
+		font-size: 18px;
+		height: 50px;
+	}
+	#footer{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.fale-conosco h1{
+		font-size: 22px;
+	}
+	.fale-conosco span{
+		font-size: 16px;
+	}
+	.desenvolvedor{
+		height: 60px;
+	}
+	.desenvolvedor p{
+		font-size: 16px;
+	}
+	.card .user{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	}
+	.card p{
+		font-size: 14px;
+	}
+}
+@media(max-width: 600px){
+	#menu{
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 70px;
+		right: 0;
+		background: #292929;
+		height: 0px;
+		text-align: center;
+		transition: 0.5s;
+		z-index: 1000;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+	#nav.active #menu{
+		height: calc(100vh - 80px);
+		visibility: visible;
+		overflow-y: auto;
+	} 
+	#menu a{
+		padding: 1rem 0;
+		margin: 0 1rem;
+		border-bottom: 1px solid #fff;
+	}
+	#btn-mobile{
+		display: flex;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	#hamburger{
+		width: 20px;
+		border-top: 2px solid #fff;
+	}
+	#hamburger::after, #hamburger::before{
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #fff;
+		margin-top: 5px;
+		transition: .5s;
+		position: relative;
+	}
+	#nav.active #hamburger{
+		border-top-color: transparent;
+	}
+	#nav.active #hamburger::before{
+		transform: rotate(135deg);
+	}
+	#nav.active #hamburger::after{
+		transform: rotate(-135deg);
+		top: -7px;
+	}
+	.slide-text{
+		padding: 5px 0;
+	}
+	.slide-text .title{
+		font-size: 16px;
+	}
+	.slide-text .subtitle{
+		font-size: 50px;
+	}
+	.btn{
+		font-size: 1.2em;
+	}
+	.btn:hover{
+		transform: scale(1.2);
+	}
+	#quem-somos h1{
+		font-size: 50px;
+	}
+	#quem-somos img{
+		width: 470px; height: 470px;
+		margin-bottom: 30px;
+	}
+	#quem-somos p{
+		width: 100%;
+		font-size: 15px;
+	}
+	#quem-somos .biograph{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	#servicos h1{
+		font-size: 50px;
+	}
+	.preco span{
+		font-size: 18px;
+	}
+	.modal-content{
+		width: 460px; height: 460px;
+	}
+	.modal-content .modal-img{
+		width: 370px; height: 370px;
+	}
+	#galeria h1{
+		font-size: 50px;
+	}
+	.flexbox > div{
+		max-width: 300px;
+	}
+	.flexbox img{
+		width: 300px; height: 300px;
+	}
+	#clientes h1{
+		font-size: 50px;
+	}
+	.cards{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.card{
+		width: 350px;
+		height: 350px;
+	}
+	#contact h1{
+		font-size: 50px;
+	}
+	.p1, .p2{
+		font-size: 14px;
+	}
+	input::placeholder{
+		font-size: 14px;
+	}
+	#email{
+		font-size: 14px;
+	}
+	textarea{
+		font-size: 14px;
+	}
+	#botao{
+		font-size: 16px;
+		height: 45px;
+	}
+	form p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.p1, .p2{
+		font-size: 13px;
+		width: 100%;
+	}
+	#footer{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.fale-conosco h1{
+		font-size: 20px;
+	}
+	.fale-conosco span{
+		font-size: 14px;
+	}
+	.desenvolvedor{
+		height: 60px;
+	}
+	.desenvolvedor p{
+		font-size: 14px;
+	}
+	.card h3{
+		font-size: 20px;
+	}
+	.card .user{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	}
+	.star{
+		width: 15px;
+		height: 15px;
+	}
+	.card p{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 400px){
+	#menu{
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 70px;
+		right: 0;
+		background: #292929;
+		height: 0px;
+		text-align: center;
+		transition: 0.5s;
+		z-index: 1000;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+	#nav.active #menu{
+		height: calc(100vh - 80px);
+		visibility: visible;
+		overflow-y: auto;
+	} 
+	#menu a{
+		padding: 1rem 0;
+		margin: 0 1rem;
+		border-bottom: 1px solid #fff;
+	}
+	#btn-mobile{
+		display: flex;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	#hamburger{
+		width: 20px;
+		border-top: 2px solid #fff;
+	}
+	#hamburger::after, #hamburger::before{
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #fff;
+		margin-top: 5px;
+		transition: .5s;
+		position: relative;
+	}
+	#nav.active #hamburger{
+		border-top-color: transparent;
+	}
+	#nav.active #hamburger::before{
+		transform: rotate(135deg);
+	}
+	#nav.active #hamburger::after{
+		transform: rotate(-135deg);
+		top: -7px;
+	}
+	.slide-text{
+		padding: 5px 0;
+	}
+	.slide-text .title{
+		font-size: 14px;
+	}
+	.slide-text .subtitle{
+		font-size: 40px;
+	}
+	.btn{
+		font-size: 1em;
+	}
+	.btn:hover{
+		transform: scale(1.1);
+	}
+	#quem-somos h1{
+		font-size: 40px;
+	}
+	#quem-somos img{
+		width: 350px; height: 350px;
+		margin-bottom: 30px;
+		object-fit: cover;
+	}
+	#quem-somos p{
+		width: 100%;
+		font-size: 15px;
+	}
+	#quem-somos .biograph{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	#servicos h1{
+		font-size: 40px;
+	}
+	.preco span{
+		font-size: 16px;
+	}
+	.modal-content{
+		width: 330px; height: 330px;
+	}
+	.modal-content .modal-img{
+		width: 230px; height: 230px;
+	}
+	#galeria h1{
+		font-size: 40px;
+	}
+	.flexbox > div{
+		max-width: 280px;
+	}
+	.flexbox img{
+		width: 280px; height: 280px;
+	}
+	#clientes h1{
+		font-size: 40px;
+	}
+	.cards{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.card{
+		width: 330px;
+		height: 330px;
+	}
+	#contact h1{
+		font-size: 40px;
+	}
+	form p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.p1, .p2{
+		font-size: 13px;
+		width: 100%;
+	}
+	input::placeholder{
+		font-size: 13px;
+	}
+	#email{
+		font-size: 13px;
+	}
+	textarea{
+		font-size: 13px;
+	}
+	#botao{
+		font-size: 15px;
+		height: 45px;
+	}
+	#footer{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.fale-conosco h1{
+		font-size: 18px;
+	}
+	.fale-conosco span{
+		font-size: 13px;
+	}
+	.desenvolvedor{
+		height: 55px;
+	}
+	.desenvolvedor p{
+		font-size: 13px;
+	}
+	.card h3{
+		font-size: 20px;
+	}
+	.card .user{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	}
+	.star{
+		width: 15px;
+		height: 15px;
+	}
+	.card p{
+		font-size: 14px;
+	}
+}
