@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+
+
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
 	<title> RTIWIM - Versão 2.0 </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="responsive.css">
+	
 	<script src="script.js"></script>
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="robots" content="index, follow"/>      
 
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
-    <link rel="shortcut icon" href="https://www.loopnerd.com.br/img/favicon.png" type="image/ico" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/tiwim.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script>
+      var $j = jQuery.noConflict(true);
+    </script>
+    <script src="js/jquery.contextMenu.js" type="text/javascript"></script>
+    <script src="rtiwim.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $j(document).ready(function () {
+        document.tiwim = new Tiwim();
+        document.tiwim.init();
+      });
+    </script>
+
+
 
 </head>
 <body>
@@ -41,26 +59,12 @@
 			</ul>
 		</nav>
 	</header>
-    <section class="boxLogin container">
-        <div class="content">
-              
-              <form class="login" method="POST" name="login" action="resgsenha.php">
-                <h1><i class="icon icon-key-1"></i> RECUPERAÇÃO DE SENHA</h1>
-                <div class="padding">
-                  <label>
-                    <input type="text" class="campos" placeholder="Email" name="usuario">
-                  </label>
-                 
-                  <input type="submit" class="btn fade_8S" name="login" value="Enviar">
-                  
-                </div><!--padding-->
-                <div class="linksForm">
-                  <a href="login.html" class="fade_4S" title="Resgatar Senha"><i class="icon icon-forward-1"></i> Voltar</a> 
-                  
-                </div>
-              </form>
-         </div>
-    </section><!--Login--> 
+
+  
+
+
+
+
 
 
 
@@ -84,22 +88,9 @@
 	<div class="desenvolvedor">
 		<p>&copy; 2023 por Victor Araújo. </p>
 	</div>
-   <script>
 
 
-      var url_atual = window.location.href;
-	 
-     var result1 = url_atual.indexOf("1") > -1;
- 
-     if (result1) {
-        alert("Assim que possível enviaremos uma nova senha para seu E-mail!");
-     } else {
-        
-     }
 
-
-   </script>
-  
 
 </body>
 </html>

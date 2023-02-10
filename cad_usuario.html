@@ -35,7 +35,7 @@
 				<li><a href="index.html#servicos">Publicações</a></li>
 				<li><a href="index.html#galeria">Galeria</a></li>
 				<li><a href="index.html#clientes">Pesquisadores</a></li>
-				<li><a href="paginateste.html">Página Teste</a></li>
+				<li><a href="index.html#clientes">Página Teste</a></li>
 				<li><a href="index.html#contact">Contato</a></li>
 				<li><a href="login.html">Login</a></li>
 			</ul>
@@ -45,16 +45,44 @@
     <section class="boxLogin container">
         <div class="content">
               
-              <form class="login" method="POST" name="login" action="login.php">
-                <h1><i class="icon icon-key-1"></i> LOGIN</h1>
+              <form class="login" method="POST" name="cadUsuario" action="cad_usuario.php">
+                <h1><i class="icon icon-key-1"></i> Cadastro de Usuário</h1>
                 <div class="padding">
                   <label>
-                    <input type="text" class="campos" placeholder="Usuário" name="usuario">
+                    <input type="text" class="campos" placeholder="Primeiro nome" name="nomeusuario">
                   </label>
                   <label>
-                    <input type="password" class="campos" placeholder="Senha"  name="senha">
+                    <input type="text" class="campos" placeholder="Segundo nome" name="sobrenomeusuario">
                   </label>
-                  <input type="submit" class="btn fade_8S" name="login" value="Entrar">
+                  <label>
+                    <input type="text" class="campos" placeholder="Nome do projeto" name="projeto">
+                  </label>
+                  <label>
+                    <input type="email" class="campos" placeholder="Endereço de email" name="emailUsuario">
+                  </label>
+
+                  <label>
+                    <input type="password" class="campos" placeholder="Insira sua senha"  name="senhausuario">
+                  </label>
+                  <label>
+                    <input type="password" class="campos" placeholder="Confirme sua senha"  name="confsenha">
+                  </label> 
+                  <hr/>
+                    <h4>Cliente</h4>
+                    <label>
+                        <input type="radio" class="campos" value="c" id="checkcliente" name="c_or_d">
+                    </label>             
+                   <hr/>
+                   <h4>Desenvolvedor</h4>
+                    <label>
+                        <input type="radio" class="campos" value="d" id="checkdesenvolvedor" name="c_or_d" >
+                      
+                      </label>
+
+                  
+                  
+
+                  <input type="submit" class="btn fade_8S" name="login" value="Finalizar">
                   
                 </div><!--padding-->
                 <div class="linksForm">
@@ -88,29 +116,7 @@
 		<p>&copy; 2023 por Victor Araújo. </p>
 	</div>
 
-
-	<script>
-     var url_atual = window.location.href;
-	 
-	 var result1 = url_atual.indexOf("1") > -1;
-
-	 if (result1) {
-		alert("Usuário ou Senha Incorreta!");
-	 } else {
-		
-	 }
-
-	 var result2 = url_atual.indexOf("5") > -1;
-
-		if (result2) {
-   			alert("Algum campo está vazio!");
-		} else {
-   
-		}
-
-	 
-	 
-	</script>  
+ 
 
 </body>
 </html>

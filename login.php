@@ -26,17 +26,17 @@ $rows = mysqli_num_rows($result);
 $tipouser = mysqli_fetch_assoc($result);
 
 
-if(($rows == 1) and ($tipouser['tipo'] == 1)){
+if(($rows !== 0) and ($tipouser['tipo'] == 1)){
    $_SESSION['usuario'] = $usuario;
    $_SESSION['senha'] = $senha;
-   header('Location: index.html');
+   header('Location: indexcliente.html');
    exit();
    
-}else if(($rows == 1) and ($tipouser['tipo'] == 2)){
+}else if(($rows !== 0) and ($tipouser['tipo'] == 2)){
 
     $_SESSION['usuario'] = $usuario;
     $_SESSION['senha'] = $senha;
-   header('Location: index.html');
+   header('Location: indexdesenvolvedor.html');
    exit();
 
 }else{

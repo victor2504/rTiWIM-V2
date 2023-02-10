@@ -31,13 +31,12 @@
 
 			<ul id="menu">
 				<li><a href="index.html">Homepage</a></li>
-				<li><a href="index.html#quem-somos">Quem Somos</a></li>
-				<li><a href="index.html#servicos">Publicações</a></li>
-				<li><a href="index.html#galeria">Galeria</a></li>
-				<li><a href="index.html#clientes">Pesquisadores</a></li>
-				<li><a href="paginateste.html">Página Teste</a></li>
-				<li><a href="index.html#contact">Contato</a></li>
-				<li><a href="login.html">Login</a></li>
+                <li><a href="pag_alter_des.php">Perfil</a></li>
+                <li><a href="index.html">Chat Online</a></li>
+                <li><a href="cad_pag_val.html">Cadastrar Páginas</a></li>                
+                <li><a href="feedback_usuario.php">Feedbacks</a></li>
+                <li><a href="instrucoes.html">Instruções</a></li>					
+				<li><a href="login.html">Logout</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -45,21 +44,30 @@
     <section class="boxLogin container">
         <div class="content">
               
-              <form class="login" method="POST" name="login" action="login.php">
-                <h1><i class="icon icon-key-1"></i> LOGIN</h1>
+              <form class="login" method="POST" name="cadUsuario" action="cad_pag_val.php">
+                <h1><i class="icon icon-key-1"></i> Cadastro de Página para Validação</h1>
                 <div class="padding">
                   <label>
-                    <input type="text" class="campos" placeholder="Usuário" name="usuario">
+                    <input type="text" class="campos" placeholder="Digite o nome do projeto" name="nomeprojeto">
                   </label>
                   <label>
-                    <input type="password" class="campos" placeholder="Senha"  name="senha">
+                    <input type="text" class="campos" placeholder="Digite o nome da página" name="nometela">
                   </label>
-                  <input type="submit" class="btn fade_8S" name="login" value="Entrar">
+                  <label>
+                    <input type="email" class="campos" placeholder="Digite o email do cliente" name="emailcliente">
+                  </label>
+                  <label>
+                    <input type="text" class="campos" placeholder="Digite o link da página" name="linktela">
+                  </label>
+
+                                 
+                  
+
+                  <input type="submit" class="btn fade_8S" name="login" value="Finalizar">
                   
                 </div><!--padding-->
                 <div class="linksForm">
-                  <a href="resgatarsenha.html" class="fade_4S" title="Resgatar Senha"><i class="icon icon-forward-1"></i> Resgatar Senha</a> 
-                  <a href="cad_usuario.html" class="fade_4S" title="Cadastrar-se"><i class="icon icon-user-add"></i> Cadastro</a>
+                    <a href="indexdesenvolvedor.html" class="fade_4S" title="Resgatar Senha"><i class="icon icon-forward-1"></i> Voltar</a> 
                 </div>
               </form>
          </div>
@@ -88,29 +96,7 @@
 		<p>&copy; 2023 por Victor Araújo. </p>
 	</div>
 
-
-	<script>
-     var url_atual = window.location.href;
-	 
-	 var result1 = url_atual.indexOf("1") > -1;
-
-	 if (result1) {
-		alert("Usuário ou Senha Incorreta!");
-	 } else {
-		
-	 }
-
-	 var result2 = url_atual.indexOf("5") > -1;
-
-		if (result2) {
-   			alert("Algum campo está vazio!");
-		} else {
-   
-		}
-
-	 
-	 
-	</script>  
+ 
 
 </body>
 </html>

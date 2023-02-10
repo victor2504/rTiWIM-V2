@@ -8,6 +8,8 @@
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
+
+
 html{
 	scroll-behavior: smooth;
 }
@@ -112,12 +114,12 @@ a{
 .slide-text .title{
 	font-family: Antic Slab, sans-serif;
 	font-size: 35px;
-	color: #fff;
+	color: rgb(59, 57, 57);
 }
 .slide-text .subtitle{
 	font-family: Anton, sans-serif;
 	font-size: 100px;
-	color: #fff;
+	color: rgb(59, 57, 57);
 	letter-spacing: 5px;
 }
 .slides{
@@ -151,6 +153,11 @@ a{
 #voltar{
 	top: 50%; left: 10%;
 }
+
+table, th, td {
+	border: 1px solid black;
+  }
+
 #next{
 	top: 50%; right: 10%;
 }
