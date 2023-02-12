@@ -22,21 +22,21 @@ if(empty($_POST['nomeprojeto']) or empty($_POST['nometela']) or empty($_POST['em
     echo ('
     <script>
     alert("Preencha todos os campos!");
-    window.location.href = "cad_tela_site.html";
+    window.location.href = "cad_pag_val.html";
     </script>
     ');  
 
-}else if($rows == 1){
+}//else if($rows == 1){
 
-echo ('
-    <script>
-    alert("Nome do projeto já existe!");
-    window.location.href = "cad_tela_site.html";
-    </script>
-    ');  
+//echo ('
+  //  <script>
+    //alert("Nome do projeto já existe!");
+    //window.location.href = "cad_pag_val.html";
+    //</script>
+    //');  
 
 
-}else{
+//}else{
 
 
 $status = 1;
@@ -58,5 +58,5 @@ window.location.href = "indexdesenvolvedor.html";
 
    // exit();   
 
-}
+//}
 ?>

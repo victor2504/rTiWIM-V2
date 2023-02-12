@@ -55,7 +55,7 @@ $senhauser = $rows['senha'];
 			<ul id="menu">
             <li><a href="index.html">Homepage</a></li>
                 <li><a href="pag_alter_cliente.php">Perfil</a></li>
-                <li><a href="index.html">Chat Online</a></li>
+                <li><a href="chat.php">Chat Online</a></li>
                 <li><a href="validar_pag.php">Validação de Páginas</a></li>				
 				<li><a href="login.html">Logout</a></li>
 			</ul>
